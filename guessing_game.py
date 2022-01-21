@@ -8,6 +8,20 @@ guess = int(input())
 if guess == answer:
     print("Dang it! You're right!")
 elif guess > answer:
-    print("Your guess was too high, correct answer is {0}. And remember, House always wins!".format(answer))
+    print("Your guess was too high, you have last chance!")
+    guess = int(input())
+    if guess == answer:
+        print("You got it in second try!")
+    elif guess > answer:
+        print("Your guess was too high, correct answer is {0}. And remember, House always wins!".format(answer))
+    else:
+        print("Your guess was too low, correct answer is {0}. And remember, House always wins!".format(answer))
 else:
-    print("Your guess was too low, correct answer is {0}. And remember, House always wins!".format(answer))
+    print("Your guess was too low, you have last chance!")
+    guess = int(input())
+    if guess == answer:
+        print("You got it in second try!")
+    elif guess > answer:
+        print("Your guess was too high, correct answer is {0}. And remember, House always wins!".format(answer))
+    else:
+        print("Your guess was too low, correct answer is {0}. And remember, House always wins!".format(answer))
