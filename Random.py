@@ -18,7 +18,6 @@ while answer != number:
         answer = int(input("Try again!\n"))
         print("_" * 30)
     else:
-
         break
 if check == 0:
     print("You got it!")
