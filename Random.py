@@ -1,6 +1,7 @@
 import random
+highest = int(input("Please input highest number of string:\n")) + 1
 check = 0
-number = random.randint(1, 10)
+number = random.randint(1, highest)
 answer = int(input("Make your guess: \n"))
 print("_" * 30)
 while answer != number:
