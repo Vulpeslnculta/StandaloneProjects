@@ -15,14 +15,6 @@ for letter in input_string:
     ascii_list.append(ascii_letter)
     counter_encode += 1
 
-#  debugger
-print(ascii_list)
-print(swap_key)
-
-#  decoder
-for ascii_char in ascii_list:
-    decoded_letter = chr(ascii_char - swap_key[counter_decode - 1])
-    decoded_string += decoded_letter
-    counter_decode += 1
-#  results
-print(decoded_string)
+#  output
+print("Your data is encrypted: " + str(ascii_list))
+print("Save that Key to decode your data later!!!: " + str(swap_key))
